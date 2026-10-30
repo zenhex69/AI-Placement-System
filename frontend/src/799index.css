@@ -1,0 +1,123 @@
+/* ============================================================
+   DESIGN SYSTEM — Navy & Teal AI Placement Platform
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+:root {
+  /* ── Brand colours ── */
+  --navy-primary:   #0F172A;
+  --navy-secondary: #1E293B;
+  --navy-surface:   #263348;
+  --teal:           #0D9488;
+  --teal-bright:    #14B8A6;
+  --teal-light:     rgba(13, 148, 136, 0.12);
+  --teal-border:    rgba(13, 148, 136, 0.35);
+
+  /* ── Page & card surfaces ── */
+  --bg:             #F5F7FA;
+  --bg-alt:         #EDF0F5;
+  --card:           #FFFFFF;
+  --card-hover:     #F8FAFC;
+
+  /* ── Text ── */
+  --text-primary:   #0F172A;
+  --text-secondary: #64748B;
+  --text-muted:     #94A3B8;
+  --text-inverse:   #FFFFFF;
+
+  /* ── Borders & dividers ── */
+  --border:         #E2E8F0;
+  --border-strong:  #CBD5E1;
+
+  /* ── Status ── */
+  --success:        #16A34A;
+  --success-bg:     rgba(22, 163, 74, 0.10);
+  --success-border: rgba(22, 163, 74, 0.30);
+  --warning:        #F59E0B;
+  --warning-bg:     rgba(245, 158, 11, 0.10);
+  --warning-border: rgba(245, 158, 11, 0.30);
+  --error:          #DC2626;
+  --error-bg:       rgba(220, 38, 38, 0.08);
+  --error-border:   rgba(220, 38, 38, 0.25);
+  --info:           #2563EB;
+  --info-bg:        rgba(37, 99, 235, 0.08);
+  --info-border:    rgba(37, 99, 235, 0.25);
+
+  /* ── Shadows ── */
+  --shadow-xs:  0 1px 2px rgba(15,23,42,0.06);
+  --shadow-sm:  0 1px 3px rgba(15,23,42,0.08), 0 1px 2px rgba(15,23,42,0.06);
+  --shadow-md:  0 4px 6px rgba(15,23,42,0.07), 0 2px 4px rgba(15,23,42,0.06);
+  --shadow-lg:  0 10px 15px rgba(15,23,42,0.08), 0 4px 6px rgba(15,23,42,0.05);
+  --shadow-xl:  0 20px 25px rgba(15,23,42,0.10), 0 8px 10px rgba(15,23,42,0.06);
+
+  /* ── Radii ── */
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  14px;
+  --radius-xl:  18px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* ── Transitions ── */
+  --transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ── Typography ── */
+  --font: "Inter", system-ui, -apple-system, sans-serif;
+
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-synthesis: none;
+}
+
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+/* #root must be full-width — no artificial max-width or border */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+a { text-decoration: none; color: inherit; }
+
+button {
+  font-family: var(--font);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input, select, textarea {
+  font-family: var(--font);
+  outline: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  line-height: 1.2;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+p { color: var(--text-secondary); }
+
+img { max-width: 100%; display: block; }
